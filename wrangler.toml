@@ -1,7 +1,7 @@
+# Cloudflare Pages configuration
+# This project is deployed as a Cloudflare Pages site.
+# Build settings are managed via the Cloudflare Pages dashboard or CI.
+
 name = "zamsolar"
 pages_build_output_dir = "dist"
 compatibility_date = "2026-03-01"
-compatibility_flags = ["nodejs_compat"]
-
-[assets]
-directory = "./dist"
