@@ -1,7 +1,9 @@
-# Cloudflare Pages configuration
-# This project is deployed as a Cloudflare Pages site.
-# Build settings are managed via the Cloudflare Pages dashboard or CI.
+# Cloudflare deployment configuration
+# Supports both `npx wrangler deploy` (Workers) and `npx wrangler pages deploy` (Pages).
 
 name = "zamsolar"
-pages_build_output_dir = "dist"
 compatibility_date = "2026-03-01"
+
+# Required for `npx wrangler deploy` to locate the build output directory.
+[assets]
+directory = "./dist"
